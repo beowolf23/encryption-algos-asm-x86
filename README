@@ -1,0 +1,40 @@
+====== TEMA-2 IOCLA ======
+
+Timp de lucru:
+    Task 1 + 2 = 2.5h
+    Task 3 = 6h
+    Task 4 = 4h
+
+Task 1:
+  -> am luat ebx counter pe care l-am folosit
+     pentru a itera cheia si plaintext-ul
+  -> am iterat si adaugat in textul criptat
+     pana valoarea iteratorului a devenit egala
+     cu lungimea textului
+    
+Task 2:
+  -> am scazut anul curent si anul nasterii
+  -> am comparat luna si ziua nasterii cu cele
+     curente, iar daca aceastea erau mai mai decat
+     cele curente, am scazut 1 din diferenta de ani
+     
+Task 3:
+  -> am calculat dimensiunile matricii facand o impartire
+  -> am iterat prin vectorul cu indicii coloanelor si prin
+     vectorul plaintext
+  -> la fiecare iteratie am calculat pozitia la care trebuie
+     adaugat caracterul de pe coloana in matricea rezultat
+     dupa o formula dedusa
+  -> pentru aceste lucruri m-am folosit de variabile declarate
+     global, in combinatie cu registrele puse la dispozitie
+  
+Task 4:
+  -> am calculat tag-ul si offset-ul adresei primite pe care
+     le-am stocat in variabile separate
+  -> am verificat daca tag-ul mai exista in vectorul de tag-uri
+  -> daca mai exista inseamna ca avem cache hit, iar in acest caz
+     iau din cache valoarea corespunzatoare indicelui din tag si o
+     mut in registrul rezultat
+  -> in caz de cache miss calculez index-ul adresei pe care trebuie sa
+     o adaug in cache
+  -> adaug adresa in cache, in vectorul de tags si apoi in registrul rezultat
